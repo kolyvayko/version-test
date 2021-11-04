@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "description": "some descr",
+  "repository": "git@github.com:kolyvayko/version-test.git",
+  "author": "Oleksii Kolyvaiko <oleksii.kolyvaiko@refinitiv.com>",
+  "license": "MIT",
+  "scripts": {
+    "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\""
+  }
+}
